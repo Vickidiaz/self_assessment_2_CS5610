@@ -2,7 +2,8 @@ function MainModule(listingsID = "#listings") {
   const me = {};
 
   const listingsElement = document.querySelector(listingsID);
-//  This is the chnaged i made for self assessment
+//  This is the chnages I made for self assessment
+// notes to remember what I did: created card text class where I can add in/ bring in the data from json file
   function getListingCode(listing) {
     return `<div class="col-4">
       <div class="listing card">
@@ -11,8 +12,10 @@ function MainModule(listingsID = "#listings") {
           class="card-img-top"
           alt="AirBNB Listing"
         />
+        // craeted a card-body class, here all listing info will be added 
         <div class="card-body">
           <h2 class="card-title">${listing.name}</h2>
+          // use strong to be able to see the text difference
           <p class="card-text"><strong>Description: </strong>${listing.description}</p>
           <p class="card-text"><strong>Amenities: </strong>${listing.amenities}</p>
           <p class="card-text"><strong>Host: </strong>${listing.host_name}</p>
