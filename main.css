@@ -3,7 +3,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: #333;
-  background-color: #eee;
+  background-color: #82968c;
 }
 
 div.listing h2 {
@@ -27,3 +27,8 @@ div.host > img {
   max-height: 200px;
   overflow: scroll;
 }
+
+
+
+
+
