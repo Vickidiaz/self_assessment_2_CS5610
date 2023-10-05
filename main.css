@@ -5,6 +5,21 @@ body {
   color: #333;
   background-color: #82968c;
 }
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: right; /* Right-align the navigation items */
+}
+
+nav li {
+  display: inline-block; /* Display list items horizontally */
+  margin-left: 10px; /* spacing between items */
+  border: 3px solid black; /* border around each item */
+  padding: 5px 10px; /*  padding inside each item */
+  background-color: #66804a;
+  border-radius: 20px; /* Make the border round */
+  color: black;
+}
 
 div.listing h2 {
   font-size: 1.5rem;

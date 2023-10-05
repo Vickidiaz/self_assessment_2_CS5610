@@ -26,6 +26,11 @@ function MainModule(listingsID = "#listings") {
           />
           <p class="card-text"><strong>Price: </strong>${listing.price}</p>
           <a href="${listing.listing_url}" class="btn btn-primary">View Listing</a>
+          // unique component: added a like button
+          // Create the "Like" button and add it to the card body
+          const likeButton = document.createElement('button');
+          likeButton.classList.add('btn', 'btn-primary', 'like-button');
+          likeButton.textContent = 'Like';
         </div>
       </div>
     </div>`;
@@ -58,23 +63,3 @@ const main = MainModule();
 
 main.loadData();
 
-
-// JavaScript to toggle the "liked" state of the button
-const likeButtons = document.querySelectorAll('.like-button');
-
-likeButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    button.classList.toggle('liked');
-    if (button.classList.contains('liked')) {
-      button.textContent = 'Liked';
-    } else {
-      button.textContent = 'Like';
-    }
-  });
-});
-
-
-function showLikeButton(image) {
-  const likeButton = image.nextElementSibling; // Get the next element (the like button)
-  likeButton.classList.remove("hidden"); // Remove the 'hidden' class to display the button
-}
