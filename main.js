@@ -25,7 +25,7 @@ function getListingCode(listing) {
         />
         <p class="card-text"><strong>Price: </strong>${listing.price}</p>
         <a href="${listing.listing_url}" class="btn btn-primary">View Listing</a>
-        // Like button added here
+        <!-- Like button added here -->
         // added unique component 
         <button class="btn btn-primary like-button">Like</button>
       </div>
